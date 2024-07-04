@@ -69,7 +69,11 @@ public:
     }
 };
 int main(){
-    cout<<"Just For Fun";
+    LRUCache* obj = new LRUCache(4);
+    for(int i=1;i<4;i++) obj->put(i,i);
+    cout<<obj->get(1);
+    obj->put(5,5);
+    obj->put(6,6);
     return 0;
 }
 /**
